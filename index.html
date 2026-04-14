@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Jennifer's College Sophomore Memories</title>
+    <nav>
+        <ul>
+            <li><a href="#fallquarter">Fall Quarter</a></li>
+            <li><a href="#winterquarter">Winter Quarter</a></li>
+            <li><a href="#springquarter">Spring Quarter</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Here's My Fall Quarter!</h1>
+    </header>
+    <section id="fallquarter">
+        <br>
+        <h2>Fall Quarter</h2>
+        <meta name="description" content="Here's a summary of my fall quarter!">
+        <link rel="stylesheet" href="styles.css">
+        <p>In fall quarter, I took a big leap and applied for <b>UCSD ACM Diamond Staff</b> and it went well! 
+            I also got picked up from <strong>ACM Big Byte</strong> and from <strong>Kaibigang Pilipino</strong>.</p>
+        <p> Other than that, it was my first quarter of <a href="https://ersp.ucsd.edu/" target="_blank">ERSP</a>, 
+            <i>the Early Research Scholars Program</i>. I was intimidated at first because I didn't feel as if I 
+            was too experienced. Thankfully, I have a great team and awesome mentors to lead me along the way!</p>
+        <h3>Highlights</h3>
+        <p>Here are some pictures from my fall quarter!</p>
+        <img src="https://i.imgur.com/IHwW525.jpeg" alt="Here's me and my big (or byte) at ACM reveal!!" width="100"">
+        <img src="https://i.imgur.com/OucTy83.jpeg" alt="Here's me and my fam at KP reveal!!" width="300">
+        <p>I would also watch a lot of mukbangs. Here's a video I watched from first quarter.</p>
+        <video width="320" height="240" controls>
+                <source src="mukbang.mp4" type="video/mp4">
+        </video>
+        <details>
+            <summary>Here's a fun fact about me!</summary>
+            <p>I would always eat while watching mukbangs during first quarter. I don't really do that anymore as of April of 2026.</p>
+        </details>
+        <p>Here's my most listened to song during fall quarter!</p>
+        <p> The song is called <b>Can't Get You</b> by <i>Jaehyun</i></p>
+        <audio controls>
+                <source src="can'tgetyou.mp3" type="audio/mpeg">
+        </audio>
+        <form>
+            <fieldset>
+                <legend>What are some of your favorite memories from fall quarter? And when are you answering this?
+                </legend>
+                <date></date> <input type="date" id="date" name="date">
+
+                <input type="checkbox" id="acm" name="acm" value="ACM">
+                <label for="acm">ACM Diamond Staff</label><br>
+                <input type="checkbox" id="bigbyte" name="bigbyte" value="Big Byte">
+                <label for="bigbyte">ACM Big Byte</label><br>       
+                <input type="checkbox" id="kp" name="kp" value="KP">
+                <label for="kp">Kaibigang Pilipino</label><br>   
+                <input type="radio" id="ersp" name="ersp" value="ERSP">
+                <label for="ersp">ERSP</label><br>
+                <textarea id="other" name="other" rows="4" cols="50">
+                Other: </textarea><br>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+        <br>
+        <form>
+            <datalist id="songs">
+                <option value="Kiss Me by Cassie">
+                <option value="Jealous by Nick Jonas">
+                <option value="All that Matters by Justin Bieber">
+
+            </datalist>
+            <label for="song">What's other favorite songs from fall quarter?</label>
+            <input list="songs" id="song" name="song"> 
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <form>  
+            <label for="mukbangs">What are some of your favorite mukbangs?</label>
+        </form>
+        <select name="mukbangs" id="mukbangs">
+            <option value="exotic">Exotic Foods</option>
+            <option value="seafood">Seafood Boil</option>
+            <option value="chocolate">Chocolate</option>
+        </select>  
+        <button type="submit">Submit</button> 
+        <p> Here is actually how I would rate them!</p>
+        <ol>
+            <li>Seafood Boil</li>
+            <li>Exotic Foods</li>
+            <li>Chocolate</li>
+        </ol>
+        
+    </section>
+    <hr class="divider">
