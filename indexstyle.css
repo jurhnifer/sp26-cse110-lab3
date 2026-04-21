@@ -1,0 +1,264 @@
+
+/* Apply color to body element */
+body {
+    background-color: rgb(255, 246, 250); /* Light gray background */
+    color: black; /* Dark gray text */
+}
+
+/* Style for the header */
+header {
+    background-color: #ffd6d6; /* Light pink background */
+    padding: 20px;
+    text-align: center;
+    color: hsl(0, 59%, 74%); /* Dark gray text */
+}
+
+/*CSS Variables & Fallback */
+:root {
+    --primary-color: hsl(0, 59%, 74%); /* Dark gray */
+    --secondary-color: rgb(255, 246, 250); /* Light gray */
+}
+
+/* Relative units */
+h1 {
+    font-size: 2.5rem; /* Relative to the default font size */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em; /* Relative to the default font size */
+    line-height: 1.5; 
+}
+
+/*General style for h2 elements*/
+h2 {
+    color: color-mix(in srgb, red 45%, white);
+    text-decoration: overline underline 1px;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+}
+
+/* Box Model */
+/* Style for table of contents: borders*/
+.table-of-contents {
+    border-style: solid;
+    border-color: color(srgb 1 0.75 0.8 / 0.5);
+    border-width: 4px;
+    border-radius: 10px;
+    position: static;
+}
+
+/* Style for table of contents: shorthand margin & shorthand padding*/
+.table-of-contents {
+    margin:
+        20px /* top and bottom */
+        10px /* left and right */;
+    padding:
+        15px
+        30px
+        20px
+        30px;
+}
+/* Style for section; longhand */
+.reflection-pre-meeting {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+/*Style for section setting-the-mood: auto margins & padding*/
+.setting-the-mood {
+    margin: auto; /* Center the element horizontally */
+    width: 90%; /* Set a width to see the centering effect */
+    padding-top: 30px; /* Add padding to the top */
+    padding-bottom: 30px; /* Add padding to the bottom */
+    padding-right: 10px; /* Add padding to the right */
+    padding-left: 10px; /* Add padding to the left */
+}
+
+.action-items label {
+    display: inline-block;
+    padding: 10px;
+    background-color: #fceded;
+    margin: 5px;
+    border: 1px solid #dbb1b1;
+    width: 200px; /* Width only works because of inline-block */
+    height: 30px;
+}
+
+.hidden {
+    display: none; /* Hides the element */
+}
+
+.important-information {
+    max-width: 800px;
+    max-height: 350px;
+}
+
+details {
+    border: 1px solid #ffffff;
+    background-color: rgb(255, 243, 245);
+    padding: 10px;
+    margin: 20px 0;
+    position: relative;
+}
+
+/* Style for button when pressed & adjusted for cursor */
+button:hover {
+    background-color: #fceded;
+    border: 1px solid #dbb1b1;
+    cursor: pointer;
+}
+
+a:active{   
+    color: hsl(0, 59%, 74%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.expectations ol {
+    display: flex;             /* Turns the list into a flex container */
+    list-style-type: decimal; /* Changes bullet points to squares */
+    gap: 10px;
+    padding: 20px;              /* Removes default padding */
+    flex-direction: column;       /* Aligns items horizontally */
+}
+
+/* Create grid for container */
+.updates-reviews {
+    display: grid;
+    /* This creates 3 equal columns that fill the available width */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px; /* Adds space between  items */
+    padding: 0;
+    list-style: none; /* Removes the default bullet points for a cleaner look */
+}
+
+/* Create a style for each grid box */
+.updates-reviews li {
+    background-color: #ffeced;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #ffc0c8;
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Make text smaller on phones */
+    }
+}
+
+#other {
+    background-color: #ffebf9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #dcb4c7;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Universal Selector */
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in the total width and height */
+}
+
+/* Attribute Selector */
+input[type="checkbox"] {
+    margin-right: 15px; /* Adds space between the checkbox and its label */
+}
+
+li, ol {
+    font-family: "Miranda Sans", sans-serif;
+}
+
+/* Child Combinator */
+
+.setting-the-mood > details > summary {
+    font-weight: bold;
+    color: hsl(0, 59%, 74%);
+}
+
+input ~ label {
+    font-style: italic;
+    color: rgb(76, 76, 76);
+}
+
+/* Adjacent Sibling Combinator */
+input[type="checkbox"] + label {
+    font-weight: bold;
+    color: hsl(0, 59%, 74%);
+}
+
+/*Combining Two Selectors*/
+ul.updates-reviews{
+    font-weight: bold;
+    color:hsl(0, 59%, 74%)
+}
+
+details:has(video) {
+    border-color: #ffb6c1; /* Light pink border for details that contain a video */
+}
+
+/* Nested Selectors */
+.reflection-pre-meeting {
+    background-color: #fff0f5; /* Light Lavender Blush */
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #fbcfe8;
+    color: #895162; /* Deep Pink Text */
+    font-family: sans-serif;
+
+    /* Nested Header */
+    & h2 {
+        color: #985571;
+        border-bottom: 2px solid #fbcfe8;
+        padding-bottom: 10px;
+    }
+
+    /* Nested Form and Fieldset Styles */
+    & form {
+        & fieldset {
+            border: 2px solid #fbcfe8;
+            border-radius: 12px;
+            background-color: #ffffff;
+            padding: 20px;
+
+            & legend {
+                font-weight: bold;
+                color: color-mix(in srgb, #986279, white);
+                padding: 0 10px;
+            }
+
+            & label {
+                margin-left: 5px;
+                cursor: pointer;
+            }
+
+            & textarea {
+                width: 90%;
+                border: 2px solid #fbcfe8;
+                border-radius: 8px;
+                padding: 10px;
+                background-color: #fff5f7;
+                margin-top: 5px;
+            }
+
+            & button {
+                background-color: #f099c0;
+                color: white;
+                border: none;
+                padding: 12px 24px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: background-color 0.3s;
+
+                /* Nested Hover State */
+                &:hover {
+                    background-color: #986279;
+                }
+            }
+        }
+    }
+}
