@@ -2,97 +2,175 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Jennifer's College Sophomore Memories</title>
+        <title>Project Meeting Minutes</title>
     </head>
     <body>
     <nav>
         <ul>
-            <li><a href="#fallquarter">Fall Quarter</a></li>
-            <li><a href="#winterquarter">Winter Quarter</a></li>
-            <li><a href="#springquarter">Spring Quarter</a></li>
+            <li><a href="#projectmeetingminutes">Project Meeting Minutes</a></li>
+            <li><a href="#settingthemoodofthemeeting&icebreaker">Setting the mood of the meeting & Icebreaker</a></li>
+            <li><a href="#reflectionpre-meeting">Reflection Pre-Meeting</a></li>
+            <li><a href="#importantinformation">Important Information</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#actionitems">Action Items</a></li>    
+            <li><a href="#nextmeetingexpectations">Next Meeting Expectations</a></li>
         </ul>
     </nav>
     <header>
-        <h1>Here's My Fall Quarter!</h1>
+        <h1>Project Meeting Minutes</h1>
     </header>
-    <section id="fallquarter">
-        <br>
-        <h2>Fall Quarter</h2>
-        <link rel="stylesheet" href="styles.css">
-        <p>In fall quarter, I took a big leap and applied for <b>UCSD ACM Diamond Staff</b> and it went well! 
-            I also got picked up from <strong>ACM Big Byte</strong> and from <strong>Kaibigang Pilipino</strong>.</p>
-        <p> Other than that, it was my first quarter of <a href="https://ersp.ucsd.edu/" target="_blank">ERSP</a>, 
-            <i>the Early Research Scholars Program</i>. I was intimidated at first because I didn't feel as if I 
-            was too experienced. Thankfully, I have a great team and awesome mentors to lead me along the way!</p>
-        <h3>Highlights</h3>
-        <p>Here are some pictures from my fall quarter!</p>
-        <img src="https://i.imgur.com/IHwW525.jpeg" alt="Here's me and my big (or byte) at ACM reveal!!" width="100">
+    <div class="project-meeting-minutes">
+    <section id="Project Meeting Minutes">
         <hr>
-        <img src="https://i.imgur.com/OucTy83.jpeg" alt="Here's me and my fam at KP reveal!!" width="300">
-        <p>I would also watch a lot of mukbangs. Here's a video I watched from first quarter.</p>
-        <video width="320" height="240" controls>
-                <source src="mukbang.mp4" type="video/mp4">
-        </video>
+        <h2>Setting the mood of the meeting & Icebreaker</h2>
         <details>
-            <summary>Here's a fun fact about me!</summary>
-            <p>I would always eat while watching mukbangs during first quarter. I don't really do that anymore as of April of 2026.</p>
+            <summary>Here's the music we're gonna listen for this meeting!</summary>
+            <p> The song is called <b>Can't Get You</b> by <i>Jaehyun</i></p>
+            <audio controls>
+                    <source src="can'tgetyou.mp3" type="audio/mpeg">
+            </audio>
         </details>
-        <p>Here's my most listened to song during fall quarter!</p>
-        <p> The song is called <b>Can't Get You</b> by <i>Jaehyun</i></p>
-        <audio controls>
-                <source src="can'tgetyou.mp3" type="audio/mpeg">
-        </audio>
-        <form>
+        <details>
+            <summary>Here are some submitted photos from what people did last week!</summary>
+            <img src="https://i.imgur.com/IHwW525.jpeg" alt="Jennifers: Here's me and my big (or byte) at ACM reveal!!" width="100">
+            <img src="https://i.imgur.com/OucTy83.jpeg" alt="Jennifers: Here's me and my fam at KP reveal!!" width="300">
+        </details>
+        <details>
+            <summary>Video of the day: A mukbang!</summary>\
+            <video width="320" height="240" controls>
+                <source src="mukbang.mp4" type="video/mp4">
+            </video>
+        </details>
+        <br>
+        <hr>
+    </div>
+    <div class="reflection-pre-meeting">
+        <h2 id="reflectionpre-meeting">Reflection Pre-Meeting</h2>
+                <form>
             <fieldset>
-                <legend>What are some of your favorite memories from fall quarter?
-                </legend>
+                <legend>Pre-Meeting Readiness Check</legend>
 
-                <input type="checkbox" id="acm" name="acm" value="ACM">
-                <label for="acm">ACM Diamond Staff</label><br>
-                <input type="checkbox" id="bigbyte" name="bigbyte" value="Big Byte">
-                <label for="bigbyte">ACM Big Byte</label><br>       
-                <input type="checkbox" id="kp" name="kp" value="KP">
-                <label for="kp">Kaibigang Pilipino</label><br>   
-                <input type="radio" id="ersp" name="ersp" value="ERSP">
-                <label for="ersp">ERSP</label><br>
-                <textarea id="other" name="other" rows="4" cols="50">
-                Other: </textarea><br>
-                <button type="submit">Submit</button>
+                <input type="checkbox" id="read" name="read" value="read">
+                <label for="read">I have read the Pre-Read materials/Agenda.</label><br>
+
+                <input type="checkbox" id="update" name="update" value="update">
+                <label for="update">I have prepared my documents for the project.</label><br> 
+
+                <input type="checkbox" id="questions" name="questions" value="questions">
+                <label for="questions">I have identified my key blockers/questions.</label><br>   
+
+                <hr>
+                
+                <p><strong>Are you prepared to discuss your project phase?</strong></p>
+                <input type="radio" id="ready" name="readiness" value="ready">
+                <label for="ready">Yes</label><br>
+                <input type="radio" id="needs_help" name="readiness" value="needs_help">
+                <label for="needs_help">I need assistance/guidance before we start.</label><br>
+
+                <br>
+                <label for="other_notes">Other comments/conflicts:</label><br>
+                <textarea id="other_notes" name="other_notes" rows="3" cols="30" placeholder="e.g., I have a hard stop at 2:00 PM..."></textarea>
+                <br><br>
+                
+                <button type="submit">Submit Reflection Check</button>
             </fieldset>
-        </form>
-        <br>
+            </form>
+        <hr>
+    </div>
+    <div class="important-information">
+        <h2 id="importantinformation">Important Information</h2>
+        <p><strong>Project Name:</strong> <i> Insert Project Name Here</i></p>
+        <p><strong>Meeting Type:</strong> </p>
         <form>
-            <datalist id="songs">
-                <option value="Kiss Me by Cassie">
-                <option value="Jealous by Nick Jonas">
-                <option value="All that Matters by Justin Bieber">
-
+            <datalist id="meetings">
+                <option value="One-on-One">
+                <option value="Project Team Meeting">
+                <option value="Brainstorming Session">
+                
             </datalist>
-            <label for="song">What's other favorite songs from fall quarter?</label>
-            <input list="songs" id="song" name="song"> 
+            <label for="meeting">Select meeting type</label>
+            <input list="meetings" id="meeting" name="meeting">
+             <form>
+            <datalist id="meetings">
+                <option value="One-on-One">
+                <option value="Project Team Meeting">
+                <option value="Brainstorming Session">
+                
+            </datalist>
+            <br>
+            <p>If other, please specify:</p>
+            <textarea id="other" name="other" rows="4" cols="50">
+                Other: </textarea><br>
             <button type="submit">Submit</button>
         </form>
         <br>
-        <form>  
-            <label for="mukbangs">What are some of your favorite mukbangs?</label>
-        </form>
-        <select name="mukbangs" id="mukbangs">
-            <option value="exotic">Exotic Foods</option>
-            <option value="seafood">Seafood Boil</option>
-            <option value="chocolate">Chocolate</option>
-        </select>  
-        <button type="submit">Submit</button> 
-        <p> Here is actually how I would rate them!</p>
-        <ol>
-            <li>Seafood Boil</li>
-            <li>Exotic Foods</li>
-            <li>Chocolate</li>
-        </ol>
+        <p><strong>Meeting Purpose:</strong> <i>Insert Project Purpose Here</i></p>
+        <p><strong>Date & Time:</strong> <i>Insert Start Here & End Here</i></p>
         <form>
-            <label for="date">When did your reveals for your clubs occur?</label>
-            <input type="date" id="date" name="date">
+            <label for="date">Insert day</label><br>
+            <input type="date" id="date" name="date"><br>
             <button type="submit">Submit</button>
         </form>
+        <p><strong>Attendees:</strong> <i>Insert Attendees Here</i></p>
+        <p><strong>Absentees:</strong> <i>Insert Absent Members Here</i></p>
+    </div>
+    <div class="agenda">
+        <h2>Agenda</h2>
+
+        <h3>Agenda Item 1: Insert agenda item here</h3>
+
+        <p>Insert discussion points here & review</p>
+        <p><strong>Updates/Reviews:</strong></p>
+        <ul>
+            <li>Insert update/review point here</li>
+            <li>Insert update/review point here</li>
+            <li>Insert update/review point here</li>
+        </ul>
+
+        <p><strong>Highlights:</strong></p>
+        <ul>
+            <li>Insert highlight here</li>
+            <li>Insert highlight here</li>
+            <li>Insert highlight here</li>
+        </ul>
+
+        <h3>Agenda Item 2: Insert agenda item here</h3>
+
+        <p>Insert discussion points here & review</p>
+        <p><strong>Updates/Reviews:</strong></p>
+        <ul>
+            <li>Insert update/review point here</li>
+            <li>Insert update/review point here</li>
+            <li>Insert update/review point here</li>
+        </ul>
+
+        <p><strong>Highlights:</strong></p>
+        <ul>
+            <li>Insert highlight here</li>
+            <li>Insert highlight here</li>
+            <li>Insert highlight here</li>
+        </ul>
+    </div>
+    <div class="action-items-next-meeting-expectations">
+        <h2 id="actionitems">Action Items</h2>
+        <input type="checkbox" id="action1" name="action1" value="action1">
+        <label for="action1">Action Item 1</label><br>
+        <input type="checkbox" id="action2" name="action2" value="action2">
+        <label for="action2">Action Item 2</label><br>
+        <input type="checkbox" id="action3" name="action3" value="action3">
+        <label for="action3">Action Item 3</label><br>
+
+        <h2 id="nextmeetingexpectations">Next Meeting Expectations (rating from highest priority [1] to lowest)</h2>
+        <ol>
+            <li>Insert highest expectation here</li>
+            <li>Insert expectation here</li>
+            <li>Insert expectation here</li>
+        </ol>
+        <br>
+        <hr>
+    </div>    
+        <br>
+      
     </section>
     </body>
 </html>
